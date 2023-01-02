@@ -33,7 +33,7 @@ def accuracy_fn(y_pred, y_true):
     return acc*100
 
 
-def train(model, train_data, train_labels, test_data, test_labels, epochs=500, BATCH_SIZE=1000):
+def train(model, train_data, train_labels, test_data, test_labels, epochs=1000, BATCH_SIZE=1000):
     loss_fn = nn.CrossEntropyLoss()
     optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
     model_name = '02_pytorch_nn.pth'
