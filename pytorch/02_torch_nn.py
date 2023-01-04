@@ -5,6 +5,7 @@ import torchinfo
 import tensorflow as tf
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
+print(device)
 
 
 class NeuralNetwork(nn.Module):
